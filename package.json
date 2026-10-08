@@ -10,7 +10,8 @@
     "url": "https://github.com/Burbank/remnote-atkinson-hyperlegible.git"
   },
   "scripts": {
-    "build": "shx rm -rf dist && shx mkdir -p dist && shx cp -r public/* dist/ && shx cp -r fonts dist/ && shx cp src/snippet.css dist/ && shx cp README.md dist/ && shx cp FONT_LICENSE.txt dist/ && cd dist && bestzip ../PluginZip.zip ./*"
+    "prebuild": "node scripts/build-css.js",
+    "build": "npm run prebuild && shx rm -rf dist && shx mkdir -p dist && shx cp -r public/* dist/ && shx cp -r fonts dist/ && shx cp src/snippet.css dist/ && shx cp README.md dist/ && shx cp FONT_LICENSE.txt dist/ && cd dist && bestzip ../PluginZip.zip ./*"
   },
   "devDependencies": {
     "bestzip": "^2.2.1",
