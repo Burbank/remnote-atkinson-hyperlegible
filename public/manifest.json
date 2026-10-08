@@ -1,0 +1,17 @@
+{
+  "manifestVersion": 1,
+  "id": "atkinson-hyperlegible",
+  "name": "Atkinson Hyperlegible",
+  "author": "Burbank",
+  "repoUrl": "https://github.com/Burbank/remnote-atkinson-hyperlegible",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "theme": [],
+  "enableOnMobile": true,
+  "description": "Apply the Atkinson Hyperlegible Next font throughout RemNote for easier reading. This font is designed by the Braille Institute for enhanced legibility.",
+  "requestNative": false,
+  "requiredScopes": []
+}

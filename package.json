@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "remnote-atkinson-hyperlegible",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "RemNote plugin to apply the Atkinson Hyperlegible Next font for easier reading",
+  "author": "Burbank",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Burbank/remnote-atkinson-hyperlegible.git"
+  },
+  "scripts": {
+    "build": "shx rm -rf dist && shx mkdir -p dist && shx cp -r public/* dist/ && shx cp -r fonts dist/ && shx cp src/snippet.css dist/ && shx cp README.md dist/ && shx cp FONT_LICENSE.txt dist/ && cd dist && bestzip ../PluginZip.zip ./*"
+  },
+  "devDependencies": {
+    "bestzip": "^2.2.1",
+    "shx": "^0.3.4"
+  }
+}
