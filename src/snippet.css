@@ -55,18 +55,6 @@ select:not([class*="icon"]) {
   font-family: 'Atkinson Hyperlegible', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif !important;
 }
 
-/* Explicitly preserve icon fonts and special elements */
-[class*="icon"],
-[class*="Icon"],
-[class*="fa-"],
-[class*="material"],
-svg,
-svg text,
-.icon,
-.Icon {
-  font-family: inherit !important;
-}
-
 /* Preserve monospace font for code elements */
 code,
 pre,
